@@ -1,17 +1,18 @@
 import type { Route } from "./+types/home";
+
 import { redirect } from "react-router";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Support Chat" },
-    { name: "description", content: "Sistema de soporte con React Router" },
+    { title: "New React Router App" },
+    { name: "description", content: "Welcome to React Router!" },
   ];
 }
 
 export function loader() {
-  return redirect("/auth/login"); 
+  return redirect("/chat");
 }
 
 export default function Home() {
-  return null; 
+  return null;
 }
